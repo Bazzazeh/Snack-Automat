@@ -77,7 +77,6 @@ namespace SnackAutomat
             }
             foreach(Drink drink in drinks) { drink.Display(); Console.WriteLine("\n----------"); }
         }
-        
     }
 }
         

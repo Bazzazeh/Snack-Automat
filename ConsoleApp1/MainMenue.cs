@@ -9,7 +9,7 @@ namespace SnackAutomat
             Order order = new Order();
             int maxOrder = 3;
             while (true)
-            {
+            {                                                           // Menu
                 Console.WriteLine("Wählen Sie ein Produkt aus(Maximal 3 Stk):\n(1)- CocaCola ----Klein 2,00----Groß 2,50\n(2)- Redbull ----Klein 2,50----Groß 3,00\n(3)- Fanta ----Klein 2,00----Groß 2,50\n(4)- Sprite ----Klein 2,00----Groß 2,50\n(5)- Cake ----2,00 (Mit Schokolade)\n(6)- Chips ----2,00\n(7)- Pizza ----2,00 (Mit Scharf)\n(0)- Abbrechen");
                 int selectedProduct = Convert.ToInt32(Console.ReadLine());
                 switch (selectedProduct)
@@ -25,7 +25,7 @@ namespace SnackAutomat
                         Console.Clear();
 
                         while (true)
-                        {
+                        {                                                   // If big drink
                             Console.WriteLine("Größe auswählen:\n(1) - Groß ---- Preis +0,50\n(2) - Klein");
                             int bigChoice = Convert.ToInt32(Console.ReadLine());
 
@@ -46,7 +46,7 @@ namespace SnackAutomat
                         }
 
                         while (true)
-                        {
+                        {                                                   // If with sugar or carbohydrate
                             Console.WriteLine("Möchten Sie Zucker oder Kohlensäure hinzufügen:\n(1) - Zucker----für 1,00\n(2) - Kohlensäure---- für 1,00\n(3) - Beides---- für 2,00\n(0) - Keine Zusätze");
                             int extraChoice = Convert.ToInt32(Console.ReadLine());
 
@@ -82,9 +82,10 @@ namespace SnackAutomat
                         order.AddSnack(snack);
                         Console.Clear();
                         break;
+                    default: Console.Clear(); Console.WriteLine("Falsche Eingabe"); continue;
 
                 }
-                Console.WriteLine("Möchten Sie noch was kaufen?\n(1)- Ja\n(2)- Nein");
+                Console.WriteLine("Möchten Sie noch was kaufen?\n(1)- Ja\n(2)- Nein");      // If more product
                 int moreOrder = Convert.ToInt32(Console.ReadLine());
                 if (moreOrder == 1)
                 {
