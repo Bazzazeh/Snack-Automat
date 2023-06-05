@@ -4,10 +4,10 @@ namespace SnackAutomat
 {
     internal class Payment
     {
-        public static void Pay(Order order)                 // Calculating
+        public static void Pay(Order order)                 // To Pay
         {
             double total = order.CalculateTotalPreis();
-            Console.WriteLine($"ihre gesamte betrag: {total}");
+            Console.WriteLine($"Ihre gesamte betrag: {total}");
             double allreadyPay = 0;
 
             while (true)                                    
