@@ -6,7 +6,7 @@ namespace SnackAutomat
     {
         public bool WithSpicy { get; set; }
 
-        public Pikant(bool withSpicy, double price, string name) : base("Pikant",name , price)
+        public Pikant(bool withSpicy, double price, string name) : base("Pikant", name , price)
         {
             WithSpicy = withSpicy;
         }

@@ -18,8 +18,8 @@ namespace SnackAutomat
 
         public virtual void Display()
         {
-            Console.WriteLine("Name {0}", Name);
-            Console.WriteLine("Price {0}", Price);
+            Console.WriteLine("Name----- {0}", Name);
+            Console.WriteLine("Price----- {0}", Price);
         }
     }
 }
